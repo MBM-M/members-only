@@ -1,24 +1,25 @@
-# README
+# Members Only!
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Members Only! is an exclusive clubhouse app where members can create and read anonymous posts. While anyone can read the posts, only signed-in members can see the author's name. Non-members will see the posts but will have to wonder who wrote them.
 
-Things you may want to cover:
+This application implements user authentication and restricts access to certain actions (like creating posts and viewing the author's identity) based on the user's authentication status.
 
-* Ruby version
+## Features
 
-* System dependencies
+* Authentication: Users must sign in to create new posts or see the author's name.
 
-* Configuration
+* Post Creation: Signed-in members can create new posts with a title and content.
 
-* Database creation
+### Access Control:
 
-* Database initialization
+* Only signed-in users can see the author of each post.
 
-* How to run the test suite
+* Only signed-in users can create new posts.
 
-* Services (job queues, cache servers, search engines, etc.)
+* Non-signed-in users can only view the content of posts but not the author’s name.
 
-* Deployment instructions
+### Posts Display:
 
-* ...
+* All posts are visible to everyone, but only signed-in users can see the author.
+
+* Non-signed-in users can only see the post content.
